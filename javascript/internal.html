@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript</title>
   </head>
@@ -16,24 +17,37 @@
       </div>
     </div>
 
-    <h2>Basic Javascript</h2>
-
     <!-- การลง JS แบบ Internal -->
-    <!-- <h2>การลง JS แบบ Internal</h2>
-      <p id="show-person"></p>
-      <script>
-        class Person {
-          constructor(fname, lname, age) {
-            this.fname = fname;
-            this.lname = lname;
-            this.age = age;
-          }
+    <h2>การลง JS แบบ Internal</h2>
+    <p id="show-person"></p>
+    <button id="btn-prompt-name" onclick="enterName()">Prompt Name</button>
+    <!-- <button
+      id="btn-prompt-name"
+      onclick="let [name = prompt('name?'), surname = prompt('surname?')] = ['Julius'];
+    alert(`name = ${name}`);
+    alert(`surname = ${surname}`);"
+    >
+      Prompt Name
+    </button> -->
+    <script>
+      function enterName() {
+        let [name = prompt('name?'), surname = prompt('surname?')] = ['Julius'];
+        alert(`name = ${name}`);
+        alert(`surname = ${surname}`);
+      }
+
+      class Person {
+        constructor(fname, lname, age) {
+          this.fname = fname;
+          this.lname = lname;
+          this.age = age;
         }
+      }
 
-        const person1 = new Person('koi', 'dzt', 30);
+      const person1 = new Person('koi', 'dzt', 30);
 
-        document.getElementById('show-person').innerHTML = person1.fname + ' ' + person1.lname + ' - ' + person1.age;
-      </script> -->
+      document.getElementById('show-person').innerHTML = person1.fname + ' ' + person1.lname + ' - ' + person1.age;
+    </script>
 
     <!-- การลง JS แบบ External -->
     <!-- <h2>การลง JS แบบ External</h2>
@@ -45,14 +59,5 @@
     <!-- <h1>Day8 17 Sep 2020</h1>
     <h2>Loop (for, while)</h2>
     <script src="javascript-basic-exercise.js"></script> -->
-
-    <h2>Advance Javascript</h2>
-    <!-- Homework ดู video ล่วงหน้า -->
-    <!-- JavaScrip เรื่อง 
-    Methods ของ Object
-    Constructor กับ New
-    Methods ของ Primitive -->
-    <!-- <script src="./javascript-advance.js"></script> -->
-    <!-- <script src="./javascript-advance.js"></script> -->
   </body>
 </html>

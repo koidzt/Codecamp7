@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <div style="position: fixed; top: 0; right: 0; margin-right: 3rem">
+      <h3>How to run JavaScript script through the Terminal?</h3>
+      <h4>Steps</h4>
+      <div style="padding-left: 1rem">
+        <p>1. Open Terminal or Command Prompt.</p>
+        <p>2. Set Path to where New.js is located (using cd).</p>
+        <p>3. Type “node New.js” and press ENTER.</p>
+      </div>
+    </div>
+
+    <h2>การลง JS แบบ External</h2>
+    <div style="display: flex; flex-direction: column; width: fit-content">
+      <h3>Homework 5</h3>
+      <h4 style="margin: 0">
+        Test :
+        <button style="margin-bottom: 1em" onclick="homework5()">Homework 5</button>
+      </h4>
+      <h4 style="margin: 0">
+        Flow Chart :
+        <button id="show-fc-hw-5" onclick="showFlowChartHw5()">Show</button>
+        <button id="hide-fc-hw-5" onclick="hideFlowChartHw5()" hidden>Hide</button>
+      </h4>
+
+      <img id="flow-chart-hw-5" hidden src="./homework5.png" alt="flow-chart-ex5" />
+    </div>
+    <script src="external.js"></script>
+  </body>
+</html>

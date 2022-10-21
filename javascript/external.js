@@ -151,41 +151,60 @@ if (name == "ก้อย") {
 // price = (age < 18)? 2000 : 3500;
 // alert(price);
 
-// Homework 16-SEp-2020
-// แบบฝึกหัด
-/* 2. เขียนคำสั่ง if ที่เช็คอายุว่าอยู่ระหว่าง 18 - 60*/
-// 3. เขียนคำสั่ง if ที่เช็คอายุว่าไม่อยู่ระหว่าง 18 - 60
+// Homework 16-Sep-2020
+/* 1. รับค่าอายุ*/
+/* Ans 1 - คำสั่งรับค่าอายุ */
 // let age = prompt('Please enter your age');
 // age = Number(age);
-// let message;
-// message = (age >= 18 && age <=60 )? 'อายุคุณอยู่ในช่วง 18-60':'อายุคุณไม่อยู่ในช่วง 18-60';
-// /*if (age >= 18 && age <=60 ) {
-//     message = 'อายุคุณอยู่ในช่วง 18-60';
-// } else {
-//     message = 'อายุคุณไม่อยู่ในช่วง 18-60';
-// }*/
-// alert (message);
 
-// 4. คำสั่ง alert ไหนที่จะถูกรันบ้าง
+/* 2. เขียนคำสั่ง if ที่เช็คอายุว่าอยู่ระหว่าง 18 - 60 */
+/* Ans 2 */
+// if (age >= 18 && age <= 60) {
+//   message = 'อายุคุณอยู่ในช่วง 18-60';
+// }
+
+/* 3. เขียนคำสั่ง if ที่เช็คอายุว่าไม่อยู่ระหว่าง 18 - 60 */
+/* Ans 3 */
+// /*if (age < 18 || age > 60 ) {
+//     message = 'อายุคุณไม่อยู่ในช่วง 18-60';
+// }
+
+/* Ans 2,3 - เช็คอายุตามเงื่อไขข้อ 2,3 และแสดงผล */
+// let message = age >= 18 && age <= 60 ? 'อายุคุณอยู่ในช่วง 18-60' : 'อายุคุณไม่อยู่ในช่วง 18-60';
+// alert(message);
+
+/* 4. คำสั่ง alert ไหนที่จะถูกรันบ้าง */
 // if (-1 || 0) alert( 'first' ); รัน
 // if (-1 && 0) alert( 'second' ); ไม่รัน
 // if (null || -1 && 0) alert( 'third' ); ไม่รัน
 
 // 5. ให้เขียนระบบ login
-// let user = prompt("Please enter your username");
-// let message, pass;
-// if (user === "admin"){
-//    pass = prompt("Please enter your password");
-//    if (pass === "codecamp#7"){
-//         message = "ยินดีตอนรับ";
-//    } else if(pass === "" || pass === null) {
-//         message = "ยกเลิก";
-//    } else {
-//         message = "Wrong password";
-//    }
-// }  else if (user === "" || user === null) {
-//     message = "ยกเลิก";
-// } else {
-//     message = "ผมไม่รู้จักคุณ";
-// }
-// alert(message);
+function homework5() {
+  let user = prompt('Please enter your username');
+  let message, pass;
+  if (user === 'admin') {
+    pass = prompt('Please enter your password');
+    if (pass === 'codecamp#7') {
+      message = 'ยินดีตอนรับ';
+    } else if (pass === '' || pass === null) {
+      message = 'ยกเลิก';
+    } else {
+      message = 'Wrong password';
+    }
+  } else if (user === '' || user === null) {
+    message = 'ยกเลิก';
+  } else {
+    message = 'ผมไม่รู้จักคุณ';
+  }
+  alert(message);
+}
+function showFlowChartHw5() {
+  document.getElementById('show-fc-hw-5').hidden = true;
+  document.getElementById('hide-fc-hw-5').hidden = false;
+  document.getElementById('flow-chart-hw-5').hidden = false;
+}
+function hideFlowChartHw5() {
+  document.getElementById('show-fc-hw-5').hidden = false;
+  document.getElementById('hide-fc-hw-5').hidden = true;
+  document.getElementById('flow-chart-hw-5').hidden = true;
+}
