@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS Box-sizing</title>
+
+    <!-- tag style ควรอยู่ใน head -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box-container {
+        background-color: #b7f9f3;
+        border: 5px solid #00008b;
+      }
+      .container {
+        background-color: #671f95;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        padding: 25px;
+        margin: 30px;
+      }
+      .text {
+        border: 3px dashed #f0e68c;
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box-container">
+      <div class="container">
+        <span class="text">C</span>
+      </div>
+      <div class="container">
+        <span class="text">O</span>
+      </div>
+      <div class="container">
+        <span class="text">D</span>
+      </div>
+      <div class="container">
+        <span class="text">E</span>
+      </div>
+      <div class="container">
+        <span class="text">C</span>
+      </div>
+      <div class="container">
+        <span class="text">A</span>
+      </div>
+      <div class="container">
+        <span class="text">M</span>
+      </div>
+      <div class="container">
+        <span class="text">P</span>
+      </div>
+      <div class="container">
+        <span class="text">#</span>
+      </div>
+      <div class="container">
+        <span class="text">7</span>
+      </div>
+    </div>
+  </body>
+</html>

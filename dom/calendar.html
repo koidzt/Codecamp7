@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      th {
+        border: 1px solid;
+        background-color: lightgray;
+        width: 2em;
+      }
+
+      td {
+        border: 1px solid;
+        width: 2em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="calendar"></div>
+    <script>
+      function createCalendar(elem, year, month) {
+        let monIndax = month - 1;
+        let dayIn = new Date(year, monIndax);
+
+        let table = `<table><tr><th>SU</th><th>MO</th><th>TU</th><th>WE</th><th>TH</th><th>FR</th><th>SA</th></tr><tr>`;
+
+        for (let i = 0; i < dayIn.getDay(); i++) {
+          table += `<td></td>`;
+        }
+
+        while (dayIn.getMonth() === monIndax) {
+          table += `<td>${dayIn.getDate()}</td>`;
+
+          if (dayIn.getDay() === 6) {
+            table += `</tr><tr>`;
+          }
+
+          dayIn.setDate(dayIn.getDate() + 1);
+        }
+
+        console.log(dayIn.getDay());
+        if (dayIn.getDay() < 7) {
+          for (let i = dayIn.getDay(); i < 7; i++) {
+            table += `<td></td>`;
+          }
+        }
+
+        table += `</tr></table>`;
+
+        elem.innerHTML = table;
+      }
+      createCalendar(calendar, 2012, 9);
+    </script>
+  </body>
+</html>

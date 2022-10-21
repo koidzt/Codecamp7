@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM2</title>
+    <style>
+      .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ol id="ol">
+      <li>0</li>
+      <li>1</li>
+      <li>2</li>
+    </ol>
+
+    <script>
+      ol.before('before'); // เพิ่ม string "before" ไปก่อน <ol>
+      ol.after('after'); // เพิ่ม string "after" ไปหลัง <ol>
+
+      let liFirst = document.createElement('li');
+      liFirst.innerHTML = 'prepend';
+      ol.prepend(liFirst); // เพิ่ม liFirst ที่จุดเริ่มของ <ol>
+
+      let liLast = document.createElement('li');
+      liLast.innerHTML = 'append';
+      ol.append(liLast); // เพิ่ม liLast ที่จุดสุดท้ายของ <ol>
+
+      let liName1 = ol.children[1];
+      liName1.innerHTML = 'Koi';
+      liName1.replaceWith(liName1);
+
+      let liName2 = ol.children[2];
+      liName2.innerHTML = 'Bank';
+      liName2.replaceWith(liName2);
+
+      let liName3 = ol.children[3];
+      liName3.innerHTML = 'Pee';
+      liName3.replaceWith(liName3);
+    </script>
+  </body>
+</html>

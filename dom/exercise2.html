@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-DOM2</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 3px;
+        text-align: center;
+      }
+
+      th {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- exercise 1 -->
+    <!-- <div>div(1)</div>
+
+    <ol id="ol">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <div>div(2)</div>
+    </ol>
+
+    <div>div(3)</div>
+
+    <script>
+        let text = '<b>ABC</b>';
+        let elem = document.getElementsByTagName('div');
+        elem[0].append(document.createTextNode(text));
+        elem[1].innerHTML = text; //ไม่เหมือนตรงที่ แปลงเป็น HTML ให้ แต่ถ้าเป็น text ธรรมดาก็ไม่ต่างกับตัวอื่น
+        elem[2].textContent = text;
+        
+    </script> -->
+
+    <!-- exercise 2 -->
+    <ol id="elem">
+      <li>Hello</li>
+      <li>World</li>
+    </ol>
+    <button onclick="clean(elem)">Clear Page</button>
+
+    <script>
+      function clean(node) {
+        node.remove();
+      }
+      // clear(elem); // clears the list
+    </script>
+
+    <!-- exercise 3 -->
+    <!-- <table id="table">
+        aaa
+        <tr>
+            <td>Test</td>
+        </tr>
+    </table>
+
+    <script>
+        alert(table); // the table, as it should be
+
+        // table.remove();
+        // why there's still aaa in the document?
+    </script> -->
+
+    <!-- exercise 4 -->
+    <!-- <script>
+        let ul = document.createElement("ul");
+        document.body.append(ul);
+
+        // mysalf
+        // let user;
+        // while (user !== null) {
+        //     user = prompt('enter user');
+        //     if (user === null) break;
+        //     let li = document.createElement('li');
+        //     li.innerHTML = user;
+        //     ul.append(liLast);
+        // }
+
+        // Answer
+        while(true){
+            let input = prompt("enter user");
+            if(!input) break;
+            let li = document.createElement('li');
+            li.innerHTML = input;
+            ul.append(li);
+        }
+    </script> -->
+
+    <!-- exercise 5 -->
+    <!-- <div id="container"></div>
+
+    <script>
+        let data = {
+            "Fish": {
+                "trout": {},
+                "salmon": {}
+            },
+
+            "Tree": {
+                "Huge": {
+                    "sequoia": {},
+                    "oak": {}
+                },
+                "Flowering": {
+                    "apple tree": {},
+                    "magnolia": {}
+                }
+            }
+        };
+
+        function createTree(container, obj) {
+            // container.innerHTML = createTreeText(obj);
+            container.append(createTreeText(obj));
+        }
+
+        function createTreeText(obj) {
+            if (!Object.keys(obj).length) return;
+
+            let ul = document.createElement("ul");
+            console.log(ul);
+
+            for (let key in obj) {
+                let li = document.createElement("li");
+                li.innerHTML = key;
+
+                let childrenUl = createTreeText(obj[key]);
+                if (childrenUl) {
+                    li.append(childrenUl);
+                }
+                ul.append(li);
+            }
+            return ul;
+        }
+
+
+        // function createTreeText(obj) {
+        //     let li = '';
+        //     let ul;
+        //     for (let key in obj) {
+        //         li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+        //     }
+        //     if (li) {
+        //         ul = '<ul>' + li + '</ul>'
+        //     }
+        //     return ul || '';
+        // }
+
+        let container = document.getElementById('container');
+        createTree(container, data); // creates the tree in the container
+
+    </script> -->
+
+    <!-- exercise 6 -->
+    <!-- <ul>
+        <li>Animals
+            <ul>
+                <li>Mammals
+                    <ul>
+                        <li>Cows</li>
+                        <li>Donkeys</li>
+                        <li>Dogs</li>
+                        <li>Tigers</li>
+                    </ul>
+                </li>
+                <li>Other
+                    <ul>
+                        <li>Snakes</li>
+                        <li>Birds</li>
+                        <li>Lizards</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Fishes
+            <ul>
+                <li>Aquarium
+                    <ul>
+                        <li>Guppy</li>
+                        <li>Angelfish</li>
+                    </ul>
+                </li>
+                <li>Sea
+                    <ul>
+                        <li>Sea trout</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        let lis = document.getElementsByTagName('li');
+
+        for (let li of lis) {
+            // get the count of all <li> below this <li>
+            let descendantsCount = li.getElementsByTagName('li').length;
+            if (!descendantsCount) continue;
+
+            // add directly to the text node (append to the text)
+            li.firstChild.data += ' [' + descendantsCount + ']';
+        }
+    </script> -->
+
+    <!-- exercise 7 -->
+    <!-- <div id="calendar"></div>
+
+    <script>
+        function createCalendar(elem, year, month) {
+            let monIdx = month - 1;
+            let theDay = new Date(year, monIdx);
+
+            let table = `<table><tr><th>MO</th><th>TU</th><th>WE</th><th>TH</th><th>FR</th><th>SA</th><th>SU</th></tr><tr>`;
+
+            for (let i = 0; i < getDay(theDay); i++) {
+                table += '<td></td>';
+            }
+
+            while (theDay.getMonth() === monIdx) {
+                table += `<td>${theDay.getDate()}</td>`;
+
+                if (getDay(theDay) === 6) {
+                    table += `</tr><tr>`;
+                }
+
+                theDay.setDate(theDay.getDate() + 1);
+            }
+
+            if (getDay(theDay) !== 0) {
+                for (let i = getDay(theDay); i < 7; i++) {
+                    table = '<td></td>';
+                }
+            }
+
+            table += `</tr></table>`;
+
+            elem.innerHTML = table;
+        }
+
+        function getDay(date) {
+            let day = date.getDay();
+            if (day === 0) {
+                day = 7;
+            }
+            return day - 1;
+        }
+
+        createCalendar(calendar, 2012, 9);
+
+    </script> -->
+
+    <!-- exercise 8 -->
+  </body>
+</html>

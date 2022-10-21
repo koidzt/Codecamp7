@@ -1,0 +1,73 @@
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.box1 {
+  background-color: royalblue;
+  position: relative;
+  top: 10px;
+}
+
+.box2 {
+  background-color: lightblue;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: -5px;
+}
+
+.box3 {
+  background-color: sandybrown;
+  height: 30px;
+  width: 30px;
+  /* position: absolute; */
+  top: -5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .box1 {
+    background-color: black;
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .box1 {
+    background-color: green;
+    position: relative;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box1 {
+    background-color: red;
+    position: relative;
+    top: 10px;
+  }
+}
+
+:root {
+  --main-bg-color: coral;
+  --main-text-size: 30px;
+}
+
+#div1 {
+  background-color: var(--main-bg-color);
+  font-size: var(--main-text-size);
+  padding: 5px;
+}
+
+#div2 {
+  background-color: var(--main-bg-color);
+  font-size: var(--main-text-size);
+  padding: 5px;
+}
+
+#div3 {
+  background-color: var(--main-bg-color);
+  font-size: var(--main-text-size);
+  padding: 5px;
+}

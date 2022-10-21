@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event & DOM Exercise</title>
+  </head>
+
+  <body>
+    <h2>Change function from exercise to answer by DOM</h2>
+    <!-- exercise 1 -->
+    <!-- <button onclick="hidenText(text)">Cick to hide the text</button>
+    <div id="text">Text</div>
+    <script>
+      function hidenText(node) {
+        node.remove();
+      }
+    </script> -->
+    <!-- Anwser 1 -->
+    <!-- <button onclick="hideHandler()">Cick to hide the text</button>
+    <div id="text-ans-1">Text</div>
+    <script>
+      function hideHandler() {
+        document.getElementById(`text-ans-1`).hidden = true;
+      }
+    </script> -->
+
+    <!-- exercise 2 -->
+    <!-- <button id="button" onclick="hidenText(button)">Cick to hide the text</button>
+    <script>
+        function hidenText(node) {
+            node.remove();
+        }     
+    </script> -->
+    <!-- Anwser 2 -->
+    <!-- <button id="button" onclick="hideHandler()">Cick to hide me</button>
+    <script>
+        function hideHandler() {
+            document.getElementById(`button`).hidden = true;
+        }
+    </script> -->
+
+    <!-- exercise 3 -->
+    <!-- <button id="buttonH" onclick="hideHandler(text)">Hide</button>
+    <button id="buttonS" onclick="showHandler(text)">Show</button>
+    <p id="text">Cick to hide me</p>
+    <script>
+      document.getElementById(`buttonS`).hidden = true;
+      function hideHandler() {
+        document.getElementById(`text`).hidden = true;
+        document.getElementById(`buttonH`).hidden = true;
+        document.getElementById(`buttonS`).hidden = false;
+      }
+      function showHandler() {
+        document.getElementById(`text`).hidden = false;
+        document.getElementById(`buttonH`).hidden = false;
+        document.getElementById(`buttonS`).hidden = true;
+      }
+    </script> -->
+    <!-- Answer 3 -->
+    <!-- <button id="toggleBtn" onclick="toggle()">Hide</button>
+    <p id="text">Cick to hide me</p>
+    <script>
+      let show = true;
+      const toggle = () => {
+        if (show) {
+          document.getElementById('toggleBtn').innerHTML = 'Show';
+          document.getElementById(`text`).hidden = true;
+        } else {
+          document.getElementById('toggleBtn').innerHTML = 'Hide';
+          document.getElementById(`text`).hidden = false;
+        }
+        show = !show;
+      };
+    </script> -->
+
+    <!-- exercise 4 -->
+    <!-- <div>
+      Province
+      <select class="form-province" id="province">
+        <option value="1">Bangkok</option>
+        <option value="2">Nonthaburi</option>
+      </select>
+    </div>
+    <div>
+      District
+      <select class="form-district" id="district">
+        <option value="1">Ratchathewi</option>
+        <option value="2">Patumwan</option>
+        <option value="3">Muang</option>
+        <option value="4">Pakgret</option>
+      </select>
+    </div> -->
+    <!-- Anwser 4 -->
+    <label for="">Province</label>
+    <select name="province" id="province" onchange="changeProvince(event)">
+      <option value="bangkok">Bangkok</option>
+      <option value="nonthaburi">Nonthaburi</option>
+    </select>
+
+    <label for="">District</label>
+    <select name="district" id="district"></select>
+
+    <script>
+      const provinceObj = {
+        bangkok: ['Ratchathewi', 'Pathumwan'],
+        nonthaburi: ['Mueang', 'Pakgret'],
+      };
+
+      const changeProvince = (e) => {
+        const selectedProvince = e.target.value;
+        const districtArr = provinceObj[selectedProvince].map((ele) => `<option>${ele}</option>`);
+        document.getElementById('district').innerHTML = districtArr.join('');
+      };
+    </script>
+  </body>
+</html>

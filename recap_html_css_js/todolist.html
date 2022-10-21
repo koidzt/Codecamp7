@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+
+  <body>
+    <input class="todo-input" type="text" />
+    <button class="todo-add-button" onclick="addTodo()">Add</button>
+    <ul class="todo-container">
+      <div>
+        <li class="todo-item-text">Todo 1</li>
+        <button class="todo-delete-button">Delete</button>
+        <button lass="todo-edit-button">Edit</button>
+      </div>
+    </ul>
+
+    <script>
+      // Selector
+      const todoInput = document.querySelector('.todo-input');
+      const todoAddButton = document.querySelector('.todo-add-button');
+      const todoContainer = document.querySelector('.todo-container');
+
+      function addTodo(event) {
+        const todoItem = document.createElement('div');
+        todoItem.classList.add('todo-item');
+
+        const todoItemText = document.createElement('li');
+        const createDeleteButton = document.createElement('button');
+        const createEditButton = document.createElement('button');
+
+        todoContainer.appendChild(boxList);
+
+        todoContainer.lastElementChild.appendChild(todoList);
+        todoContainer.lastElementChild.appendChild(createDeleteButton);
+        todoContainer.lastElementChild.appendChild(createEditButton);
+
+        const x = document.querySelector('.todo-input').value;
+        todoList.innerHTML = x;
+        createDeleteButton.innerHTML = 'Delete';
+        createEditButton.innerHTML = 'Edit';
+      }
+
+      function deleteList() {}
+    </script>
+  </body>
+</html>

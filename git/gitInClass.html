@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git</title>
+  </head>
+
+  <body>
+    <h3>Git</h3>
+    <hr />
+
+    <h4>คำสั่ง Git</h4>
+    <div style="padding-left: 1rem">
+      <p>git status ใช้เพื่อดูว่าตอนนี้มีไฟล์ไหนอัพโหลดแล้วและยังไม่อัพโหลด</p>
+      <p>git add &lt;file&gt; ใช้เพื่อขอเพิ่มไฟเป็นสถานะ stage (เตรียม commit)</p>
+      <p>git add . ใช้เพื่อขอเพิ่มไฟล์ทั้งหมดให้เป็นสถานะ stage (เตรียม commit)</p>
+      <p>
+        git commit -m "massage ที่จะ Note การเปลี่ยนแปลงนี้" ใช้เพื่อสร้าง snapshot ให้ git
+        เพื่อบันทึกว่ามีการแก้ไขอะไรและอัพเดตไฟล์ขึ้น git
+      </p>
+      <br />
+      <p>git log --all --graph --decorate --oneline คือ การแสดง log ของการ commit git นั้น</p>
+      <p>git checkout &lt;branch&gt; คือ การเปลี่ยน branch</p>
+      <p>git checkout -b &lt;new-branch&gt; คือ การสร้าง branch ใหม่และเปลี่ยนไปที่ branch ใหม่นั้น</p>
+      <p>git merge &lt;branch&gt; คือการรวม branch ที่เจาะจงมายัง local</p>
+      <p>git remote add origin &lt;url&gt; คือการตั้งค่า remote เชื่อมไปที่ url ชื่อ origin</p>
+      <p>git remote origin คือเลือกว่าจะเชื่อมกับ url ที่ชื่อ origin</p>
+      <p>git push -u origin master ใช้สำหรับครั้งแรกในการ push ขึ้น github ครั้งต่อๆไปใช้แค่ git push ก็พอ</p>
+      <p>
+        git push คือ ส่งการเปลี่ยนแปลงของไฟล์ไปบน remote repository - ใช้ในการอัพเเดตไฟล์ที่แก้ไข
+        แต่ทุกครั้งที่แก้ไขไฟล์ต้องมีคำสั่งดังนี้ด้วย
+      </p>
+      <p>
+        git pull คือการ remote ไฟล์มายัง local (ดึงไฟล์ลงมาเพื่อให้ใน local มีไฟล์งานเป็นปัจจุบัน) โดยคำสั่ง git pull
+        นั้นจะทำการ git fetch และ git merge ไปด้วย โดยเราจะมักเห็นใช้ git pull –rebase เพื่อทำการเปลี่ยนฐานแทนการ merge
+      </p>
+      <p>git fetch คือ การตรวจสอบไฟล์ภายใน local และ remote ว่าตรงกันหรือไม่</p>
+      <p>git stash คือ การเก็บซ่อนการเปลี่ยนแปลงทั้งหมดไว้ทั้งหมด และสามารถนำกลับมาโดยใช้ git stash pop</p>
+      <p>git clone (url) คือการ คัดลอกโปรเจคจาก remote มายัง local</p>
+    </div>
+  </body>
+</html>

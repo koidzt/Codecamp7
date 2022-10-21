@@ -10,7 +10,7 @@ _Recapitulation learning from Codecamp#7 and other_
 - fullstack : Authentication React.js & Node.js
 - other : TDD Redux Docker Deploy
 
-## Frontend
+## This branch is Frontend
 
 - **_Git_**
 - **_HTML_**
@@ -24,33 +24,3 @@ _Recapitulation learning from Codecamp#7 and other_
 - **_Event_**
 - **_DOM_** : _Document Object Model_
 - **_Recap_**
-
-## Framework
-
-- **_React.js_**
-<!-- - **_Angular.js_**
-- **_Vue.js_** -->
-
-## Backend
-
-- **_Node_**
-- **_Sequelize_**
-- **_Database_**
-  - **SQL** : Structured Query Language
-    - MySQL
-  - **NoSQL** : Not Only Structured Query Language
-    - MongoDB
-    - Firebase
-
-## Fullstack
-
-- **_Authentication_**
-- **_Sample Facebook_**
-- **_My Project_**
-
-## Other
-
-- **_TDD_**
-- **_Redux_**
-- **_Deploy_**
-- **_Docker_**

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      button {
+        width: fit-content;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button onclick="alert('Alert by HTML')">Alert by HTML</button>
+    <br />
+    <button onclick="alertJs()">Alert by Javascript</button>
+    <br />
+    <form method="POST" action="" onsubmit="alert('Form submit')">
+      <label for="">Age</label>
+      <input type="text" id="ahe" onchange="" />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+    <p onclick="alert('p is clicked')">Text</p>
+
+    <input id="btn" type="button" value="Click me (will alert by Javascript)" />
+    <script src="./event.js"></script>
+  </body>
+</html>
