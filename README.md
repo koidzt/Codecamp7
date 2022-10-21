@@ -1,8 +1,8 @@
 _Recapitulation learning from Codecamp#7 and other_
 
-### Index of Repository
+# Index of Repository
 
-_Branch Lists_
+**Branch Lists**
 
 - frontend : HTML CSS Javascript
 - framework : Basic React
@@ -10,45 +10,45 @@ _Branch Lists_
 - fullstack : Authentication React.js & Node.js
 - other : TDD Redux Docker Deploy
 
-#### Frontend
+## Frontend
 
-- _Git_
-- _HTML_
-- _CSS_
+- **_Git_**
+- **_HTML_**
+- **_CSS_**
   - inline
   - internal
   - external
-- _Javascript_
+- **_Javascript_**
   - internal
   - external
-- _Event_
-- _DOM : document object model_
-- _Recap_
+- **_Event_**
+- **_DOM_** : _Document Object Model_
+- **_Recap_**
 
-#### Framework
+## Framework
 
-- _React.js_
+- **_React_.\_js**
 
-#### Backend
+## Backend
 
-- _Node_
-- _Sequelize_
-- _Database_
-  - **_SQL_** : Structured Query Language
+- **_Node_**
+- **_Sequelize_**
+- **_Database_**
+  - **SQL** : Structured Query Language
     - MySQL
-  - **_NoSQL_** : Not Only Structured Query Language
+  - **NoSQL** : Not Only Structured Query Language
     - MongoDB
     - Firebase
 
-#### Fullstack
+## Fullstack
 
-- _Authentication_
-- _Sample Facebook_
-- _My Project_
+- **_Authentication_**
+- **_Sample Facebook_**
+- **_My Project_**
 
-#### Other
+## Other
 
-- _TDD_
-- _Redux_
-- _Deploy_
-- _Docker_
+- **_TDD_**
+- **_Redux_**
+- **_Deploy_**
+- **_Docker_**
