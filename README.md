@@ -4,7 +4,7 @@ _Recapitulation learning from Codecamp#7 and other_
 
 **Branch Lists**
 
-- **frontend : HTML CSS Javascript** `#0969DA`
+- **_frontend : HTML CSS Javascript_** `current branch`
 - framework : Basic React
 - backend : Node Sequelize Database
 - fullstack : Authentication React.js & Node.js
