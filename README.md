@@ -4,13 +4,13 @@ _Recapitulation learning from Codecamp#7 and other_
 
 **Branch Lists**
 
-- frontend : HTML CSS Javascript
+- > frontend : HTML CSS Javascript
 - framework : Basic React
 - backend : Node Sequelize Database
 - fullstack : Authentication React.js & Node.js
 - other : TDD Redux Docker Deploy
 
-## This branch is Frontend
+## Frontend
 
 - **_Git_**
 - **_HTML_**
