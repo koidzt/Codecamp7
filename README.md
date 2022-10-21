@@ -27,7 +27,9 @@ _Recapitulation learning from Codecamp#7 and other_
 
 ## Framework
 
-- **_React_.\_js**
+- **_React.js_**
+<!-- - **_Angular.js_**
+- **_Vue.js_** -->
 
 ## Backend
 
