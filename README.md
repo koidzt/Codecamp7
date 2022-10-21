@@ -4,7 +4,7 @@ _Recapitulation learning from Codecamp#7 and other_
 
 **Branch Lists**
 
-- frontend : HTML CSS Javascript
+- frontend : Git HTML CSS Javascript DOM
 - framework : Basic React
 - backend : Node Sequelize Database
 - fullstack : Authentication React.js & Node.js
@@ -15,13 +15,14 @@ _Recapitulation learning from Codecamp#7 and other_
 - **_Git_**
 - **_HTML_**
 - **_CSS_**
-  - inline
-  - internal
-  - external
+  - Inline
+  - Internal
+  - External
 - **_Javascript_**
-  - internal
-  - external
-- **_Event_**
+  - Internal
+  - External
+  - Event
+  - Logical
 - **_DOM_** : _Document Object Model_
 - **_Recap_**
 
