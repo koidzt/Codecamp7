@@ -29,8 +29,12 @@ _Recapitulation learning from Codecamp#7 and other_
 ## Framework
 
 - **_React.js_**
-<!-- - **_Angular.js_**
-- **_Vue.js_** -->
+  - Structure
+  - Example react app
+    - First React : change background color and call PersonCard component
+
+<!-- - **_Vue.js_** -->
+<!-- - **_Angular.js_** -->
 
 ## Backend
 
