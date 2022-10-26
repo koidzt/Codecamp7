@@ -20,6 +20,9 @@ _Recapitulation learning from Codecamp#7 and other_
     - _First-React_
       create component & import PersonCard component (function and class < old & new version for setState > component pattern)
     - _Facebook-Post_
+      copy ui post of facebook
+    - _Second-React_
+      counter project is simple manage setState
 
 <!-- - **_Angular.js_**
 - **_Vue.js_** -->
