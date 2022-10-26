@@ -25,6 +25,8 @@ _Recapitulation learning from Codecamp#7 and other_
       Management state by counter project (plus,minus,reset state count)
     - _Third-React_
       Management state for shoe/hide person card
+    - _Fourth-React_
+      Management action onClick and onDoubleClick will change to state of bgColor and isShow
 
 <!-- - **_Angular.js_**
 - **_Vue.js_** -->
