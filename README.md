@@ -18,11 +18,13 @@ _Recapitulation learning from Codecamp#7 and other_
   - **Example-React**
     ตัวอย่าง React App ที่ลองทำในห้องเรียน วิธีดู ให้ Copy File ใน Folder ไปใส่แทนใน Folder src ของ Project React ที่ create-react-app เพื่อ run ดู
     - _First-React_
-      create component & import PersonCard component (function and class < old & new version for setState > component pattern)
+      Create component & import PersonCard component (function and class < old & new version for setState > component pattern)
     - _Facebook-Post_
-      copy ui post of facebook
+      Copy ui of facebook post
     - _Second-React_
-      counter project is simple manage setState
+      Management state by counter project (plus,minus,reset state count)
+    - _Third-React_
+      Management state for shoe/hide person card
 
 <!-- - **_Angular.js_**
 - **_Vue.js_** -->
