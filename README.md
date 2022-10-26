@@ -30,8 +30,9 @@ _Recapitulation learning from Codecamp#7 and other_
 
 - **_React.js_**
   - Structure
-  - Example react app
-    - First React : change background color and call PersonCard component
+  - Example React App
+    - First React
+    - Facebook Post
 
 <!-- - **_Vue.js_** -->
 <!-- - **_Angular.js_** -->
