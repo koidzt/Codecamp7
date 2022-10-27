@@ -16,19 +16,19 @@ _Recapitulation learning from Codecamp#7 and other_
   Folder ที่ควรมีในโปรเจคและแต่ละ Folder ใช้สำหรับเก็บไฟล์อะไร
 - **Basic-React** <br/>
   ตัวอย่าง React App ที่ลองทำในห้องเรียน วิธีดู ให้ Copy File ใน Folder ไปใส่แทนใน Folder src ของ Project React ที่ create-react-app เพื่อ run ดู <br/>
-  - _React-First-App_ <br/>
+  - **_React-First-App_** <br/>
     Create component & import PersonCard component (function and class < old & new version for setState > component pattern)
-  - _Facebook-Post_ <br/>
+  - **_Facebook-Post_** <br/>
     Copy ui of facebook post
-  - _React-Second-App_ <br/>
+  - **_React-Second-App_** <br/>
     Management state by Counter app (plus,minus,reset state count)
-  - _React-Third-App_ <br/>
+  - **_React-Third-App_** <br/>
     Management state for shoe/hide person card
-  - _React-Fourth-App_ <br/>
+  - **_React-Fourth-App_** <br/>
     Management action onClick and onDoubleClick will change to state of bgColor and isShow
-  - _React-Fifth-App_ <br/>
+  - **_React-Fifth-App_** <br/>
     Import image file each method & Management state for change picture is show
-  - _React-Sixth-App_ <br/>
+  - **_React-Sixth-App_** <br/>
     Todo list app : import page.js from pages folder for show page and import components in page.js
-  - _React-Seventh-App_ <br/>
+  - **_React-Seventh-App_** <br/>
     World clock app : import bootstrap by Include via CDN (Internal HTML) & How to use setInterval and clearInterval by class component
