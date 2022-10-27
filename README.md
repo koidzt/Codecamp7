@@ -38,6 +38,8 @@ _Recapitulation learning from Codecamp#7 and other_
   - React-Fifth-App : Slide picture (no animation)
   - React-Sixth-App : Todo list
   - React-Seventh-App : World clock
+  - Register-Form-App : Example React vs React Hook
+  - Hook-Exercise-App : Exercises transform React to React Hook
 
 ## Backend
 
