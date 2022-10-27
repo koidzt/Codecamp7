@@ -31,6 +31,8 @@ _Recapitulation learning from Codecamp#7 and other_
       Import image file each method & Management state for change picture is show
     - _React-Sixth-App_
       Todo list app : import page.js from pages folder for show page and import components in page.js
+    - _React-Seventh-App_
+      World clock app : import bootstrap by Include via CDN (Internal HTML) & How to use setInterval and clearInterval by class component
 
 <!-- - **_Angular.js_**
 - **_Vue.js_** -->
