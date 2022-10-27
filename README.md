@@ -34,3 +34,5 @@ _Recapitulation learning from Codecamp#7 and other_
   World clock app : import bootstrap by Include via CDN (Internal HTML) & How to use setInterval and clearInterval by class component
 - **Register-Form-App**
   Example transform register form app from react (class component) to react hook (function component)
+- **Hook-Exercise-App**
+  10 Exercises react (class component) for transform to react hook (function component)
