@@ -26,25 +26,27 @@ _Recapitulation learning from Codecamp#7 and other_
 - **_DOM_** : _Document Object Model_
 - **_Recap_**
 
-## Framework
+## Framework (React.js)
 
-- **_React.js_**
-  - Structure
-  - Example React App
-    - First React
-    - Facebook Post
-
-<!-- - **_Vue.js_** -->
-<!-- - **_Angular.js_** -->
+- **_Structure_**
+- **_Basic-React_**
+  - React-First-App : Change background color
+  - Facebook-Post : Sample ui of facebook post
+  - React-Second-App : Counter
+  - React-Third-App : User card
+  - React-Fourth-App : Table data with event click
+  - React-Fifth-App : Slide picture (no animation)
+  - React-Sixth-App : Todo list
+  - React-Seventh-App : World clock
 
 ## Backend
 
 - **_Node_**
 - **_Sequelize_**
 - **_Database_**
-  - **SQL** : Structured Query Language
+  - SQL : Structured Query Language
     - MySQL
-  - **NoSQL** : Not Only Structured Query Language
+  - NoSQL : Not Only Structured Query Language
     - MongoDB
     - Firebase
 
