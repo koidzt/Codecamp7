@@ -15,7 +15,7 @@ _Recapitulation learning from Codecamp#7 and other_
 - **_React.js_**
   - **Structure**
     Folder ที่ควรมีในโปรเจคและแต่ละ Folder ใช้สำหรับเก็บไฟล์อะไร
-  - **Example-React**
+  - **Basic-React**
     ตัวอย่าง React App ที่ลองทำในห้องเรียน วิธีดู ให้ Copy File ใน Folder ไปใส่แทนใน Folder src ของ Project React ที่ create-react-app เพื่อ run ดู
     - _React-First-App_
       Create component & import PersonCard component (function and class < old & new version for setState > component pattern)
