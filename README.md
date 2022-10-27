@@ -22,13 +22,15 @@ _Recapitulation learning from Codecamp#7 and other_
     - _Facebook-Post_
       Copy ui of facebook post
     - _React-Second-App_
-      Management state by counter project (plus,minus,reset state count)
+      Management state by Counter app (plus,minus,reset state count)
     - _React-Third-App_
       Management state for shoe/hide person card
     - _React-Fourth-App_
       Management action onClick and onDoubleClick will change to state of bgColor and isShow
     - _React-Fifth-App_
       Import image file each method & Management state for change picture is show
+    - _React-Sixth-App_
+      Todo list app : import page.js from pages folder for show page and import components in page.js
 
 <!-- - **_Angular.js_**
 - **_Vue.js_** -->
