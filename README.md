@@ -6,44 +6,24 @@ _Recapitulation learning from Codecamp#7 and other_
 
 - frontend : Git HTML CSS Javascript DOM
 - framework : Basic React
-- backend : Node Sequelize Database
+- **_backend : Node Sequelize Database_** `current branch`
 - fullstack : Authentication React.js & Node.js
 - other : TDD Redux Docker Deploy
-
-## Frontend
-
-- **_Git_**
-- **_HTML_**
-- **_CSS_**
-  - Inline
-  - Internal
-  - External
-- **_Javascript_**
-  - Internal
-  - External
-  - Event
-  - Logical
-- **_DOM_** : _Document Object Model_
-- **_Recap_**
-
-## Framework (React.js)
-
-- **_Structure_**
-- **_Basic-React_**
-  - React-First-App : Change background color
-  - Facebook-Post : Sample ui of facebook post
-  - React-Second-App : Counter
-  - React-Third-App : User card
-  - React-Fourth-App : Table data with event click
-  - React-Fifth-App : Slide picture (no animation)
-  - React-Sixth-App : Todo list
-  - React-Seventh-App : World clock
-  - Register-Form-App : Example React vs React Hook
-  - Hook-Exercise-App : Exercises transform React to React Hook
 
 ## Backend
 
 - **_Node_**
+  run function บน terminal ใช้คำสั่ง node <ชื่อไฟล์>
+
+  - Promise
+    ref : http://marcuscode.com/lang/javascript/promise
+
+    - Promise : random number for test new Promise
+    - Chaining : many-setTimeout
+    - Promisifying : continue Chaining >>> Used to new Promise, then-catch || async-await
+    - Read-File : read file from import file and use Promise for respond content in file
+    - Example : use new Promise with setTimeout
+
 - **_Sequelize_**
 - **_Database_**
   - SQL : Structured Query Language
@@ -51,16 +31,3 @@ _Recapitulation learning from Codecamp#7 and other_
   - NoSQL : Not Only Structured Query Language
     - MongoDB
     - Firebase
-
-## Fullstack
-
-- **_Authentication_**
-- **_Sample Facebook_**
-- **_My Project_**
-
-## Other
-
-- **_TDD_**
-- **_Redux_**
-- **_Deploy_**
-- **_Docker_**
