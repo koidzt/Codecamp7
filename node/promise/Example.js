@@ -44,13 +44,34 @@ function main() {
     taskThree();
   };
 
-  const usedPromise = () => {
-    console.log('Used Promise');
+  const promiseChaining = () => {
+    console.log('Promise Chaining');
     promiseTaskOne().then(() => {
       promiseTaskTwo().then(() => {
         promiseTaskThree();
       });
     });
+  };
+
+  const usedPromiseByThenCatch = () => {
+    console.log('Used Promise by then-catch');
+    promiseTaskOne()
+      .then(() => {
+        promiseTaskTwo();
+      })
+      .then(() => {
+        promiseTaskThree();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  const usedPromiseByAsyncAwait = async () => {
+    console.log('Used Promise by async-await');
+    await promiseTaskOne();
+    await promiseTaskTwo();
+    await promiseTaskThree();
   };
 
   const showLog = true; // true : show resolve, false : show reject
@@ -65,7 +86,9 @@ function main() {
   })
     .then(() => {
       setTimeout(() => {
-        usedPromise();
+        // promiseChaining();
+        // usedPromiseByThenCatch();
+        usedPromiseByAsyncAwait();
       }, 2000);
     })
     .catch((error) => {
