@@ -9,9 +9,10 @@ function taskTwo() {
 function taskThree() {
   setTimeout(function () {
     console.log('this is task 3');
-  }, 1000);
+  }, 750);
 }
 
+/* setTimeout ใน Promise คือเสมือนยิ่ง APIs แล้วหน่วงรอ APIs return ค่าคือนกลับมา โดยค่า return กลับมาจะมาใน resolve(ค่าที่ return มา) */
 function promiseTaskOne() {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
@@ -31,7 +32,7 @@ function promiseTaskThree() {
     setTimeout(function () {
       console.log('this is task 3');
       resolve();
-    }, 1000);
+    }, 750);
   });
 }
 
