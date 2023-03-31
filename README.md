@@ -35,4 +35,4 @@ _Recapitulation learning from Codecamp#7 and other_
 - **Register-Form-App**
   Example transform register form app from react (class component) to react hook (function component)
 - **Hook-Exercise-App**
-  10 Exercises react (class component) for transform to react hook (function component)
+  10 Exercises : transform react (class component) to react hook (function component) and exercise for useState,useEffect,useContext,useReducer
